@@ -2,175 +2,244 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 150px;
 }
-header h1{
-    margin-left: 1em;
-    font-size: 40px;
-}
-#menu{
-    display: flex;
-    flex-direction: row;
-    margin-left: 1em;
-    margin-left: 20em;
-}
-#menu a{
-    margin-left: 1em;
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
-}
-#menu a:hover{
-    color: #696969;
-}
-#menu li{
-    list-style: none;
-}
-header{
-    font-family: 'Satisfy', cursive;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    width: 100%;
-    height: 5em;
-    margin-left: 2em;
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 2em; 
-    background-color: rgba(255,255,255,0.7);
-    position: fixed;
-    margin-top: -16em;
-}
-header ul li a{
-    margin-top: 2em;
-}
 
-body{
-    background-image: url(./background.png);
-    background-size: cover;
-    background-color: rgba(255,255,255,0.7);
-    background-blend-mode:lighten;
-    margin: 0;
-    padding: 0;
+@media screen and (min-width: 481px){
+    .br-sp{
+        display: none;
+    }
+    header h1{
+        margin-left: 1em;
+        font-size: 40px;
+    }
+    #menu{
+        display: flex;
+        flex-direction: row;
+        margin-left: 1em;
+        margin-left: 20em;
+    }
+    #menu a{
+        margin-left: 1em;
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+    }
+    #menu a:hover{
+        color: #696969;
+    }
+    #menu li{
+        list-style: none;
+    }
+    header{
+        font-family: 'Satisfy', cursive;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        height: 5em;
+        margin-left: 2em;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 2em; 
+        background-color: rgba(255,255,255,0.7);
+        position: fixed;
+        margin-top: -16em;
+    }
+    header ul li a{
+        margin-top: 2em;
+    }
+    
+    body{
+        background-image: url(./background.png);
+        background-size: cover;
+        background-color: rgba(255,255,255,0.7);
+        background-blend-mode:lighten;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #about{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8em;
+    }
+    .fadedown{
+        animation-name: fadedown;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    @keyframes fadedown{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    }
+    
+    .consept{
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        text-align: center;
+        margin-left: 3.3em;
+        margin-right: 3.3em;
+    }
+    .wasabi{
+        width: 30%;
+        height: auto;
+        margin-right: 1em;
+    }
+    .hujisan{
+        width: 30%;
+        height: auto;
+        margin-left: 1em;
+    }
+    #about{
+        display: inline;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        margin-left: 2em;
+        text-align: center;
+        padding-top: 50px;
+    }
+    #about h1{
+        font-family: 'Satisfy', cursive;
+        font-size: 50px;
+    }
+    #about ul li{
+        font-size: 30px;
+        text-align: left;
+        margin-left: 16em;
+    }
+    .proN{
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        text-align: center;
+        margin-top: 10em;
+        font-size: 25px;
+        margin-bottom: 10em;
+    }
+    .proN p{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    #content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .Overview{
+        text-align: left;
+    }
+    h1.Overview{
+        border-bottom: 3px solid black;
+        border-width: 30%;
+        width: 30%;
+        margin-left: 1em;
+    }
+    .contents{
+        margin-left: 2em;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .contents h1{
+        border-bottom: 3px solid black;
+        border-width: 30%;
+        width: 10em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .contents p{
+        font-size: 20px;
+        line-height: 1em;
+    }
+    #beauty{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    #fluent{
+        width: 30%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .contents a{
+        text-decoration: none;
+        color: darkgreen;
+        font-size: 25px;
+    }
+    .contents a:hover{
+        color: #3cb371;
+    }
+    .strong{
+        font-size: 25px;
+        color: darkgreen;
+    }
 }
-
-#about{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8em;
-}
-.fadedown{
-    animation-name: fadedown;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-}
-@keyframes fadedown{
-from{
-    opacity: 0;
-    transform: translateY(-20px);
-}
-to{
-    opacity: 1;
-    transform: translateY(0px);
-}
-}
-
-.consept{
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    text-align: center;
-    margin-left: 3.3em;
-    margin-right: 3.3em;
-}
-.wasabi{
-    width: 30%;
-    height: auto;
-    margin-right: 1em;
-}
-.hujisan{
-    width: 30%;
-    height: auto;
-    margin-left: 1em;
-}
-#about{
-    display: inline;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    margin-left: 2em;
-    text-align: center;
-    padding-top: 50px;
-}
-#about h1{
-    font-family: 'Satisfy', cursive;
-    font-size: 50px;
-}
-#about ul li{
-    font-size: 30px;
-    text-align: left;
-    margin-left: 16em;
-}
-.proN{
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    text-align: center;
-    margin-top: 10em;
-    font-size: 25px;
-    margin-bottom: 10em;
-}
-.proN p{
-    font-weight: bold;
-    font-size: 30px;
-}
-#content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.Overview{
-    text-align: left;
-}
-h1.Overview{
-    border-bottom: 3px solid black;
-    border-width: 30%;
-    width: 30%;
-    margin-left: 1em;
-}
-.contents{
-    margin-left: 2em;
-    font-weight: bold;
-    font-size: 15px;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-}
-.contents h1{
-    border-bottom: 3px solid black;
-    border-width: 30%;
-    width: 10em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-.contents p{
-    font-size: 20px;
-    line-height: 1em;
-}
-#beauty{
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-#fluent{
-    width: 30%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-.contents p{
-    font-size: 20px;
-}
-.contents a{
-    text-decoration: none;
-    color: darkgreen;
-    font-size: 25px;
-}
-.contents a:hover{
-    color: #3cb371;
-}
-.strong{
-    font-size: 25px;
-    color: darkgreen;
+@media screen and (max-width: 480px){
+    .br-sp{
+        display: block;
+    }
+    header{
+        font-family: 'Satisfy', cursive;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        height: 5em;
+        margin-left: 4em;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 2em; 
+        background-color: rgba(255,255,255,0.7);
+        
+    }
+    header h1{
+        margin-left: 1em;
+    }
+    header ul li{
+        display: none;
+    }
+    body{
+        background-image: url(./background.png);
+        background-size: cover;
+        background-color: rgba(255,255,255,0.7);
+        background-blend-mode:lighten;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+    .Overview{
+        text-align: center;
+    }
+    .Overview h1{
+        text-align: center;
+        width: 80%;
+        border-bottom: solid black 2px;
+    }
+    #about ul li{
+        list-style: none;
+        text-align: left;
+        margin-left: 5em;
+    }
+    h1 .Overview{
+        width: 100%;
+        border-bottom: solid black 2px;
+        text-align: center;
+    }
+    .consept h1{
+        width: 100%;
+        font-size: 25px;
+    }
+    img.wasabi{
+        display: none;
+    }
+    img.hujisan{
+        display: none;
+    }
+    .contents h1{
+        margin-left: 1em;
+    }
 }
